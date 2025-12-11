@@ -17,7 +17,7 @@ class Citadine extends Vehicule {
      * 
      */
     public function __toString(): string {
-        return parent::__toString() . "\n Autonomie : " . $this->autonomie . " km";
+        return parent::__toString() . "<br>\n Possède une autonomie de : " . $this->autonomie . " km";
     }
 
 

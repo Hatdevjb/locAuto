@@ -38,7 +38,7 @@ abstract class Vehicule {
      * Retourne une représentation textuelle du véhicule
      */
     public function __toString(): string {
-        return get_class($this) . " <br> Ce vehicule est : \n De la marque : " . $this->marque . " \n  De model : " . $this->modele . " \n  Identifié par la plaque : " . $this->id;
+        return get_class($this) . " <br> Ce vehicule est : \n<br> De la marque : " . $this->marque . " \n<br>  De model : " . $this->modele . " \n<br>  Identifié par la plaque : " . $this->id;
     }
 
 }

@@ -19,7 +19,7 @@ class Utilitaire extends Vehicule {
      * 
      */
     public function __toString(): string {
-        return parent::__toString() . "\n nombre de passager: " . $this->chargeUtile . " km";
+        return parent::__toString() . "<br>\n Pour une charge utile de  " . $this->chargeUtile . " kg";
     }
 
 

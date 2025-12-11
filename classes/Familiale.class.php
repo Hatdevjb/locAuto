@@ -19,7 +19,7 @@ class Familiale extends Vehicule {
      * 
      */
     public function __toString(): string {
-        return parent::__toString() . "\n nombre de passager: " . $this->nbrDePassagerMAX . " km";
+        return parent::__toString() . "<br>\n Peut accueillir <b>  " . $this->nbrDePassagerMAX . " passager maximum </b>";
     }
 
 
