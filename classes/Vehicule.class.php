@@ -1,12 +1,11 @@
 <?php 
 
-
 // classes/Vehicule.class.php
 abstract class Vehicule {
     // Propriétés
 
     private string $marque;
-    private string $modele;
+    protected string $modele;
     private string $id;
 
     // Constructeur
@@ -29,17 +28,18 @@ abstract class Vehicule {
     // Méthodes abstraites
 
     /**
-     *
+     * Booléin qui retouren un message si le vehicule est planifeir pour révision
      * 
      */
-    abstract public function planifierRevision(): bool;
+    public abstract  function planifierRevision();
 
 
     /**
      * Retourne une représentation textuelle du véhicule
      */
     public function __toString(): string {
-        return get_class($this) . " " . $this->marque . " " . $this->modele . " " . $this->id;
+        return get_class($this) . " <br> Ce vehicule est : \n De la marque : " . $this->marque . " \n  De model : " . $this->modele . " \n  Identifié par la plaque : " . $this->id;
     }
 
 }
+
